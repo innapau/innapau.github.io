@@ -1,0 +1,68 @@
+.v-toolbar__items.v-btn {
+    color: #757575;
+}
+
+.v-toolbar__items a,
+.v-toolbar__items a:after,
+.v-toolbar__items a:before {
+  transition: all .5s;
+  position: relative;
+}
+
+.v-toolbar__items a:hover {
+  color: #212121;
+}
+
+.v-toolbar__items a:after {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #212121;
+  height: 1px;
+}
+.v-toolbar__items a:hover:after {
+  width: 100%;
+}
+
+.v-toolbar__items a.v-btn--active:after {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    content: '.';
+    background: #212121;
+    height: 1px;
+}
+
+.v-card {
+    user-select: none;
+}
+
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+}
+
+.measurements-link {
+    text-decoration: none;
+    color: black;
+}
+
+.measurements-link:hover {
+    text-decoration: underline;
+}
+
+.v-color-picker__controls {
+    display: none;
+}
